@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API  = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API  = process.env.REACT_APP_API_URL || 'https://social-ai-backend.vercel.app';
 
 export const fetchAnalytics = createAsyncThunk('analytics/fetch',
   async (token) =>
