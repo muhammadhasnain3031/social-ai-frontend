@@ -77,7 +77,7 @@ export default function Generator() {
       <div style={{ display: 'flex', gap: '8px', marginBottom: '24px' }}>
         {[['generate','✨ Generate Post'],['ideas','💡 Get Ideas']].map(([t,l]) => (
           <button key={t} onClick={() => setTab(t)}
-            style={{ padding: '8px 18px', borderRadius: '20px', border: 'none', cursor: 'pointer', fontSize: '13px', fontWeight: '600', background: tab===t?'linear-gradient(135deg,#667eea,#764ba2)':'#fff', color: tab===t?'#fff':'#666', border: tab===t?'none':'1px solid #e2e8f0' }}>
+            style={{ padding: '8px 18px', borderRadius: '20px',  cursor: 'pointer', fontSize: '13px', fontWeight: '600', background: tab===t?'linear-gradient(135deg,#667eea,#764ba2)':'#fff', color: tab===t?'#fff':'#666', border: tab===t?'none':'1px solid #e2e8f0' }}>
             {l}
           </button>
         ))}

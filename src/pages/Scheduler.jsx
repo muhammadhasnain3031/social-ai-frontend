@@ -15,7 +15,7 @@ export default function Scheduler() {
   const { token } = useSelector(s => s.auth);
   const { items: posts, loading } = useSelector(s => s.posts);
   const [filter, setFilter] = useState('all');
-  const [editing, setEditing] = useState(null);
+  
 
   useEffect(() => { dispatch(fetchPosts({ token })); }, [token, dispatch]);
 
